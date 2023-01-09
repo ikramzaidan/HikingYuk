@@ -1,0 +1,250 @@
+/* Product Photo Gallery */
+fieldset.active {
+    display: block !important
+}
+
+fieldset {
+    display: none
+}
+
+.pic0 {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+.product-pic {
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.tb {
+    width: 80px;
+    height: 80px;
+    border: 1px solid grey;
+    margin: 2px;
+    opacity: 0.4;
+    cursor: pointer
+}
+.tb:hover {
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.tb-active {
+    opacity: 1
+}
+
+.thumbnail-img {
+    width: 78px;
+    height: 78px
+}
+
+@media screen and (max-width: 768px) {
+    .pic0 {
+        width: 100%;
+        height: 100%;
+    }
+    .tb {
+        width: 60px;
+        height: 60px;
+    }
+    .thumbnail-img {
+        width: 56px;
+        height: 58px
+    }
+}
+
+/* Product Photo */
+.box {
+    position: relative;
+    display: inline-block;
+}
+.box .img-top {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 100;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+.box:hover .img-top {
+    opacity: 0;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+.img-thumbnail {
+    border: 0;
+}
+
+/* Custom Input Styles */
+.square-radio {
+    border: 1px solid black;
+    margin-right: 1em;
+}
+.square-radio:hover {
+    background-color: #DDD;
+}
+.square-radio-active {
+    background-color: #DDD;
+}
+.square-radio input[type="radio"] {
+    display: none;
+}
+
+.input-products {
+    background-color: #DDD !important;
+    border: transparent;
+    padding: 8px 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: transparent;
+}
+
+button:disabled {
+    background-color: #878787;
+    opacity: 0.4;
+}
+
+button.transparent {
+    background: none !important;
+    border: none !important;
+}
+
+a.btn-custom {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    color: white;
+    border: transparent;
+}
+a.btn-custom-light {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    color: black;
+    border: transparent;
+    text-decoration: none;
+    transition: .5s;
+}
+a.btn-custom-light:hover {
+    background-color: #DDD;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    
+}
+a.btn-custom:hover {
+    background-color: #323232;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    
+}
+
+.btn-cs {
+    background-color: transparent;
+    color: #1f2021;
+    border: transparent;
+}
+
+.btn-rounded {
+    border-radius: 0.25rem;
+}
+
+
+/* Custom Text */
+.text-lg {
+    font-size: 1.2em !important;
+    color: #1f2021;
+}
+.text-md {
+    font-size: 1em !important;
+    color: #1f2021;
+}
+.text-sm {
+    font-size: .8em !important;
+    color: #1f2021;
+}
+p.text-md {
+    color: white;
+    margin-bottom: 0;
+}
+.text-cs {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+a.text-cs {
+    color: #1f2021;
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+}
+ul.no-bullets {
+    list-style-type: none;
+}
+a.text-light {
+    text-decoration: none;
+}
+
+
+.divider {
+    width: 100%;
+    border-top: 3px solid #1f2021;
+}
+
+
+img.img-product {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+}
+
+.text-truncate {
+    max-width: 100%;
+}
+
+.bg-login {
+    width: 100%;
+    height: 80vh; 
+    object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+    .bg-login {
+        height: 30vh;
+    }
+}
+
+.section-dashboard {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.no-decoration {
+    text-decoration: none !important;
+}
+
+img.img-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: .25rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
